@@ -2,7 +2,7 @@ services:
   frontend:
     build:
       context: ../frontend
-      dockerfile: /frontend/frontend/Dockerfile
+      dockerfile: frontend/frontend/Dockerfile
     networks:
       - app_network
     depends_on:
@@ -16,7 +16,7 @@ services:
     networks:
       - app_network
     volumes:
-      - ./data:/app/data
+      - ./data/data.txt:/app/data
     restart: always
   nginx:
     image: nginx:latest

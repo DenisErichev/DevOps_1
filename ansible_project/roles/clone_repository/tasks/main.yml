@@ -15,6 +15,6 @@
 - name: Клонирование репозитория devops
   git:
     repo: "https://github.com/DenisErichev/DevOps_1.git"
-    dest: "/mnt/c/Users/erich/Desktop/project/DevOps"
+    dest: "/mnt/c/Users/erich/Desktop/project/devops"
   become: true
   tags: clone_repository
