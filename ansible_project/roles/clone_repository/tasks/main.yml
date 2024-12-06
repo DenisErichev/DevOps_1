@@ -18,3 +18,18 @@
     dest: "/mnt/c/Users/erich/Desktop/project/devops"
   become: true
   tags: clone_repository
+
+- name: Создание папки data
+  file:
+    path: /mnt/c/Users/erich/Desktop/project/devops/data
+    state: directory
+    mode: '0755'
+  become: true
+  tags: clone_repository
+
+- name: Создание файла data.txt в папке data
+  copy:
+    content: ""
+    dest: /mnt/c/Users/erich/Desktop/project/devops/data.txt
+    mode: '0644'
+  become: true
