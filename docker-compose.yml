@@ -16,7 +16,7 @@ services:
     networks:
       - app_network
     volumes:
-      - ./data/data.txt:/app/data
+      - ./data:/app/data
     restart: always
   nginx:
     image: nginx:latest
