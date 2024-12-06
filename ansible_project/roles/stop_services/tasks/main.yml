@@ -1,6 +1,6 @@
 ---
 - name: Остановка контейнеров с помощью Docker Compose
   shell: |
-    cd /mnt/c/Users/erich/Desktop/project/DevOps && docker-compose stop
+    cd /mnt/c/Users/erich/Desktop/project/devops && docker-compose stop
   become: true
   tags: stop_services
